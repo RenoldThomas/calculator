@@ -62,11 +62,15 @@ button {
     font-size: 48px;
     font-weight: bold;
     cursor: pointer;
+    margin: 3px;
 }
 
 .clear, 
 .equals {
-    width: 210px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 button:hover {
