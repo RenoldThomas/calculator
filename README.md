@@ -26,6 +26,11 @@ A simple yet elegant calculator web application built with HTML, CSS, and JavaSc
 
 The calculator uses event-driven JavaScript to handle user input and perform calculations. It maintains the current state through variables tracking the current number, previous number, and selected operation.
 
+## Installation Instructions
+1. Clone this repository to your local machine
+2. Open index.html in any modern web browser
+3. Alternatively, access the deployed version at https://renoldthomas.github.io/calculator
+
 ## Future Improvements
 
 Potential enhancements could include:
@@ -34,5 +39,8 @@ Potential enhancements could include:
 - History of calculations
 - Scientific calculator functions
 
-# Author
+## Author
 Renold T (@renold)
+
+## Credits
+This project was created as part of The Odin Project curriculum (2021).
