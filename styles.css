@@ -1,47 +1,52 @@
+/* Base page layout - centers calculator in viewport */
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0px;
     height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);  /* Light gray background */
 }
 
+/* Main calculator container with dark theme */
 .container {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0B1623;
-    display:flex;
+    background-color: #0B1623;  /* Dark blue/black background */
+    display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    gap: 15px;
-    max-width: 500px;
-    overflow: hidden;
-    padding: 15px;
+    border-radius: 15px;  /* Rounded corners */
+    gap: 15px;  /* Space between elements */
+    max-width: 500px;  /* Limits width on large screens */
+    overflow: hidden;  /* Prevents content from spilling out */
+    padding: 15px;  /* Internal spacing */
 }
 
+/* Calculator display styling */
 .display {
     font-size: 48px;
-    text-align: right;
+    text-align: right;  /* Right-aligns numbers like a typical calculator */
     padding: 20px;
-    font-size: 50px;
+    font-size: 50px;  /* Large text for readability */
     border: 2px solid white;
     text-align: right;
-    width: 90%;
-    background-color: #0B1623;
-    border-radius: 15px;
-    color: white;
+    width: 90%;  /* Takes up most of the container width */
+    background-color: #0B1623;  /* Matches container background */
+    border-radius: 15px;  /* Rounded corners */
+    color: white;  /* White text on dark background */
 }
 
+/* Keys container - holds all buttons */
 .keys {
     display: flex;
-    flex-direction: column;;
-    justify-content:space-evenly;
-    gap: 10px;
-    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;  /* Space between rows */
+    flex: 1;  /* Takes remaining space */
     padding: 25px;
 }
 
+/* Row styling - horizontal layout for buttons */
 .row1,
 .row2,
 .row3,
@@ -49,42 +54,49 @@ body {
 .row5 {
     display: flex;
     justify-content: space-around;
-    gap: 10px;
+    gap: 10px;  /* Space between buttons */
 }
 
+/* Base button styling */
 button {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: none;
-    background-color: #0d2149;
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 3px;
+    width: 100px;  /* Fixed width for consistent layout */
+    height: 100px;  /* Square buttons */
+    border-radius: 50px;  /* Circular buttons */
+    border: none;  /* No border */
+    background-color: #0d2149;  /* Dark blue background */
+    color: white;  /* White text */
+    font-size: 48px;  /* Large text */
+    font-weight: bold;  /* Bold text */
+    cursor: pointer;  /* Hand cursor on hover */
+    margin: 3px;  /* Small margin between buttons */
 }
 
+/* Special buttons that span multiple spaces */
 .clear, 
 .equals {
     display: flex;
-    flex: 1;
+    flex: 1;  /* Takes up more space in their row */
     align-items: center;
-    justify-content: center;
+    justify-content: center;  /* Centers text */
 }
 
+/* Button hover state - slightly lighter */
 button:hover {
-    background-color: hsl(from #0d2149 220 70% 33%);
+    background-color: hsl(from #0d2149 220 70% 33%);  /* Lightens the base color */
 }
 
+/* Button active state - pressed effect */
 button:active {
-    background-color: hsl(from #0d2149 220 70% 43%);
+    background-color: hsl(from #0d2149 220 70% 43%);  /* Further lightens for press effect */
 }
 
+/* Operator button styling - inverted colors for visual distinction */
 .operators {
-    background-color: #e3edf8;
-    color: #0B1623;
+    background-color: #e3edf8;  /* Light background */
+    color: #0B1623;  /* Dark text */
 }
+
+/* Operator button hover state */
 .operators:hover {
-    background-color: hsl(from #e3edf8 211 60% 100%);
+    background-color: hsl(from #e3edf8 211 60% 100%);  /* Slightly brighter on hover */
 }

@@ -10,33 +10,45 @@
 
 <body>
     <div class="container">
+        <!-- Calculator display output area -->
         <div class="output">
             <input class="display" readonly>
         </div>
+        
+        <!-- Calculator buttons organized in rows -->
         <div class="keys">
+            <!-- Row 1: Clear button and basic operators -->
             <div class="row1">
                 <button class="clear operators" onclick="clearDisplay()">Clear</button>
                 <button class="operators" onclick="setOperator('%')">%</button>
                 <button class="operators" onclick="setOperator('/')">/</button>
             </div>
+            
+            <!-- Row 2: Numbers 7-9 and multiplication -->
             <div class="row2">
                 <button onclick="addToDisplay('7')">7</button>
                 <button onclick="addToDisplay('8')">8</button>
                 <button onclick="addToDisplay('9')">9</button>
                 <button class="operators" onclick="setOperator('*')">x</button>
             </div>
+            
+            <!-- Row 3: Numbers 4-6 and subtraction -->
             <div class="row3">
                 <button onclick="addToDisplay('4')">4</button>
                 <button onclick="addToDisplay('5')">5</button>
                 <button onclick="addToDisplay('6')">6</button>
                 <button class="operators" onclick="setOperator('-')">-</button>
             </div>
+            
+            <!-- Row 4: Numbers 1-3 and addition -->
             <div class="row4">
                 <button onclick="addToDisplay('1')">1</button>
                 <button onclick="addToDisplay('2')">2</button>
                 <button onclick="addToDisplay('3')">3</button>
                 <button class="operators" onclick="setOperator('+')">+</button>
             </div>
+            
+            <!-- Row 5: Zero, decimal point, and equals button -->
             <div class="row5">
                 <button onclick="addToDisplay('0')">0</button>
                 <button onclick="addToDisplay('.')">.</button>
@@ -45,9 +57,8 @@
         </div>
     </div>
 
-
+    <!-- JavaScript for calculator functionality -->
     <script src="script.js"></script>
-
 </body>
 
 </html>
